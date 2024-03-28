@@ -54,7 +54,7 @@ namespace teamsapi
             try
             {
                 modelList = new List<model>();
-                var sql = "SELECT idx,senderid,destteam,destchannel,title,msg FROM omms.msg_interface_history WHERE issend = 0";
+                var sql = "";
                 var dT = con.DataSelect(sql);
                 var dR = dT.Rows;
                 foreach ( DataRow r in dR )
